@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @question.title
+%p
+  %b Scenario:
+  = @question.scenario
+%p
+  %b Answer:
+  = @question.answer
+%p
+  %b Level:
+  = @question.level
+
+= link_to 'Edit', edit_question_path(@question)
+\|
+= link_to 'Back', questions_path

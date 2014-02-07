@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: TestFixture
+  scenario: TestFixture
+  answer: TestFixture
+  level: 1
+
+two:
+  title: TestFixture
+  scenario: TestFixture
+  answer: TestFixutre
+  level: 1
+
+xss:
+  title: Cross Site Scripting
+  scenario:
+    Use cross site scripting to steal another users session.
+  answer: password
+  level: 3
