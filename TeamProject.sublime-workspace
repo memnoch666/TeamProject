@@ -1,0 +1,286 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"controller"
+			],
+			[
+				"hi",
+				"min-height"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"ass",
+				"assert_equal"
+			],
+			[
+				"asser",
+				"assert"
+			],
+			[
+				"Produc",
+				"Product"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"n",
+				"now"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/starting.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/resources.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/information.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/index.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/welcome/index.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/Gemfile",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/welcome.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/tabs/tabulous.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/layouts/application.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/join.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/_new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/_new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/application.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/join/index.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/passwords/new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/edit.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/shared/_links.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/_new.html.erb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/passwords/edit.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/confirmations/new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/shared/_links.erb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/helpers/join_helper.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/new.html.erb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/new.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/new.html.erb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/questions.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/javascripts/application.js",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140208030050_add_admin_to_users.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/models/user.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/application_controller.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/questions_controller.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/config/environments/development.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/config/routes.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/models/question.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/questions/index.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/seeds.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/test/models/question_test.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/test/fixtures/questions.yml",
+		"/home/cfi/Documents/WebApplications/TeamProject/test/controllers/questions_controller_test.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140207223458_create_questions.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/config/compass.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/public/assets/screen.css",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/screen.css.sass",
+		"/home/cfi/Documents/WebApplications/TeamProject/config/application.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/views/layouts/application.html.erb",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/sass/partial/_base.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/sass/grid.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/Gemfile",
+		"/home/cfi/Documents/TeamProject/TeamProject/config/compass.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/sass/ie.sass",
+		"/home/cfi/Documents/TeamProject/TeamProject/sass/partial/base.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/sass/grid.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/sass/partial/_base.sass",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/sass/partial/base.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/sass/Partial/base.scss",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/controllers/challenges_controller.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/db/migrate/20140204120959_create_challenges.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/db/seeds.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/db/migrate/20140204120621_create_challenges.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/app/models/question.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/db/migrate/20140204112231_create_questions.rb",
+		"/home/cfi/Documents/TeamProject/TeamProject/config.rb",
+		"/home/cfi/Documents/Test/depot/app/assets/stylesheets/products.css.scss",
+		"/home/cfi/Documents/Test/depot/db/migrate/20140124231816_create_products.rb",
+		"/home/cfi/Documents/Test/depot/app/views/products/_form.html.erb",
+		"/home/cfi/Documents/Test/depot/db/seeds.rb",
+		"/home/cfi/Documents/Test/depot/app/views/layouts/application.html.erb",
+		"/home/cfi/Documents/Test/depot/app/views/products/index.html.erb",
+		"/home/cfi/Documents/Test/depot/.gitignore",
+		"/usr/share/applications/sublime.desktop"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"menu",
+			"Resources",
+			";\n",
+			"credits",
+			"300px",
+			"/><%=",
+			"text"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/cfi/Documents/Test/demo/demo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 224.0,
+	"status_bar_visible": true
+}

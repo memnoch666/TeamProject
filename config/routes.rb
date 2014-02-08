@@ -1,4 +1,8 @@
 TeamProject::Application.routes.draw do
+  get "introduction/scenario"
+  get "introduction/starting"
+  get "introduction/information"
+  get "introduction/resources"
   get "join/index"
   devise_for :users
   get "welcome/index"
