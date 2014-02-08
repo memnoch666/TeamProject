@@ -6,4 +6,33 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body{:class => controller.controller_name}
-    = yield
+    #wrapper
+      #header
+        /Header
+        = link_to image_tag('HackerLogo.jpg', :class => 'logo'), welcome_path
+        %header
+          %h1 Team 2 - Hacking Your Future
+
+      #navbar 
+        /Add user login log out tool bar
+        - if user_signed_in?
+          = link_to "Edit Profile", edit_user_registration_path, :class => 'navbar-link' |
+          = link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'
+        - else
+          = link_to "Sign Up", new_user_registration_path, :class => 'navbar-link' |
+          = link_to "Login", new_user_session_path, :class => 'navbar-link'
+
+      /Add Notifications to above body
+      - if notice
+        %p#notice= notice
+      - if alert
+        %p#alert= alert
+
+      #yield
+        /Main Content
+        = yield
+
+      /Footer
+      #footer
+        %b University Of Derby - BSc Computer Forensic Investigation
+        %br Ralph Vickery, Matthew Newington, Martin Rasuly
