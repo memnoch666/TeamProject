@@ -1,4 +1,5 @@
 TeamProject::Application.routes.draw do
+  get "join/index"
   devise_for :users
   get "welcome/index"
   resources :questions

@@ -15,6 +15,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: black;
 }
 
 #wrapper {
@@ -51,13 +52,14 @@ html, body {
 	padding: 0;
 	margin: 0;
 	background-color: black;
-	height: 80px;
+	height: 120px;
 	width: 100%;
 	white-space: nowrap;
 
 	.logo {
 		float: left;
 		height: 80px;
+		padding: 15px;
 		padding-right: 40px;
 	}
 
@@ -65,9 +67,16 @@ html, body {
 		color: white;
 		font-size: 60px;
 		margin: 0;
-		padding-top: 20px;
+		padding-top: 30px;
 		font-weight: bold;
 	}
+}
+
+#navbar {
+	padding: 10px;
+	padding-right: 50px;
+	float: right;
+	font-size: 15px;
 }
 
 #footer {
