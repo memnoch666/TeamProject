@@ -30,8 +30,11 @@ gem 'jbuilder', '~> 1.2'
 #Extra gems addded
 gem 'haml-rails'
 gem 'html2haml'
+#Authentication
 gem 'devise'
+#Twitter css and tabulous for tabs
 gem 'bootstrap-sass', '~> 3.1.0'
+gem 'tabulous'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
