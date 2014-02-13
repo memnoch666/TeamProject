@@ -1,8 +1,8 @@
 TeamProject::Application.routes.draw do
-  get "game/level"
-  get "game/question"
-  get "game/answer"
-  get "game/solution"
+  get "challenge/level"
+  get "challenge/question"
+  get "challenge/answer"
+  get "challenge/solution"
   get "introduction/scenario"
   get "introduction/starting"
   get "introduction/information"

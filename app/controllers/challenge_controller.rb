@@ -1,4 +1,4 @@
-class GameController < ApplicationController
+class ChallengeController < ApplicationController
   def level
   	@easy = Question.find_by level: 1
   	@medium = Question.find_by level: 2
