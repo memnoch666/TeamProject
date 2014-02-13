@@ -1,0 +1,28 @@
+// Place all the styles related to the Game controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#card_container {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	display: block;
+	margin: auto;
+	text-align: justify;
+	-ms-text-justiy: distribute-all-lines;
+	text-justify: distribute-all-lines;
+
+	.card {
+		height: 400px;
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+	}
+
+	.stretch {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+	}
+}
