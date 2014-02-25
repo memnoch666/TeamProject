@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"sca",
+				"scaffolding"
+			],
+			[
 				"co",
 				"controller"
 			],
 			[
 				"hi",
 				"min-height"
-			],
-			[
-				"padding",
-				"padding-left"
 			],
 			[
 				"max",
@@ -79,6 +91,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/models/game_move.rb",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/game_type.rb",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "class Droptables < ActiveRecord::Migration\n  def change\n  	drop_table :game_move :game_type\n  end\nend\n",
+			"file": "db/migrate/20140225060542_droptables.rb",
+			"file_size": 102,
+			"file_write_time": 1393308461000000,
+			"settings":
+			{
+				"buffer_size": 102,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20140225053454_create_game_moves.rb",
+			"settings":
+			{
+				"buffer_size": 214,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -104,19 +151,40 @@
 	},
 	"file_history":
 	[
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225055349_create_game_types.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053454_create_game_moves.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053647_create_game_types.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/layouts/application.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225052035_create_game_types.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225052220_create_game_moves.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140207223458_create_questions.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225051620_create_game_types.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/challenge_controller.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/game/level.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/concerns/current_game.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/challenge.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/application.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/config/routes.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/games_controller.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/helpers/challenge_helper.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/welcome.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/introduction.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/game/answer.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/game/question.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/application_controller.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/game_controller.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/starting.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/resources.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/scenario.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/information.html.haml",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/tabs/tabulous.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/join.css.scss",
+		"/home/cfi/Documents/WebApplications/TeamProject/Gemfile",
+		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/javascripts/application.js",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/introduction/index.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/welcome/index.html.haml",
-		"/home/cfi/Documents/WebApplications/TeamProject/Gemfile",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/welcome.css.scss",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/tabs/tabulous.rb",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/views/layouts/application.html.haml",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/join.css.scss",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/_new.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/_new.html.haml",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/application.css.scss",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/join/index.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/passwords/new.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/sessions/new.html.haml",
@@ -131,20 +199,16 @@
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/new.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/devise/registrations/new.html.erb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/questions.css.scss",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/javascripts/application.js",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140208030050_add_admin_to_users.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/models/user.rb",
-		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/application_controller.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/controllers/questions_controller.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/config/environments/development.rb",
-		"/home/cfi/Documents/WebApplications/TeamProject/config/routes.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/models/question.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/questions/index.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/seeds.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/test/models/question_test.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/test/fixtures/questions.yml",
 		"/home/cfi/Documents/WebApplications/TeamProject/test/controllers/questions_controller_test.rb",
-		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140207223458_create_questions.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/config/compass.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/public/assets/screen.css",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/assets/stylesheets/screen.css.sass",
@@ -192,6 +256,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"game_type",
+			"block",
+			"150px",
 			"menu",
 			"Resources",
 			";\n",
@@ -216,8 +283,113 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/models/game_move.rb",
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								58,
+								58
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/game_type.rb",
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "db/migrate/20140225060542_droptables.rb",
+					"settings":
+					{
+						"buffer_size": 102,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "db/migrate/20140225053454_create_game_moves.rb",
+					"settings":
+					{
+						"buffer_size": 214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -281,6 +453,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 224.0,
+	"side_bar_width": 348.0,
 	"status_bar_visible": true
 }
