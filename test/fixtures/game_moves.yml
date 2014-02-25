@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  game_type_id: 1
-  description: MyString
-  code: MyString
+  description: MyText
+  code: MyText
+  game_type_id: 
 
 two:
-  game_type_id: 1
-  description: MyString
-  code: MyString
+  description: MyText
+  code: MyText
+  game_type_id: 

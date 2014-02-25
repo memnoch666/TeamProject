@@ -7,13 +7,17 @@
           %li= msg
 
   .field
-    = f.label :game_type_id
-    = f.number_field :game_type_id
-  .field
     = f.label :description
-    = f.text_field :description
+    = f.text_area :description
   .field
     = f.label :code
-    = f.text_field :code
+    = f.text_area :code
+  .field
+    = f.label :game_type
+    = f.collection_select(:game_type_id,
+      GameType.all,
+      :id,
+      :title,
+      {:prompt=>true})
   .actions
     = f.submit 'Save'

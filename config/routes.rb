@@ -1,9 +1,7 @@
 TeamProject::Application.routes.draw do
-  resources :game_types
-
   resources :game_moves
 
-  resources :games
+  resources :game_types
 
   get "challenge/level"
   get "challenge/question"

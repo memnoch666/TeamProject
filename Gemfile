@@ -36,6 +36,10 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 'tabulous'
 
+#Database gems
+gem 'mysql2'
+gem 'foreigner'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

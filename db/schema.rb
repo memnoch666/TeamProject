@@ -11,24 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225061000) do
+ActiveRecord::Schema.define(version: 20140225082637) do
 
   create_table "game_moves", force: true do |t|
+    t.text     "description"
+    t.text     "code"
     t.integer  "game_type_id"
-    t.string   "description"
-    t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "game_moves", ["game_type_id"], name: "index_game_moves_on_game_type_id", using: :btree
 
   create_table "game_types", force: true do |t|
     t.string   "title"
     t.integer  "max_score"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "games", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -58,7 +55,7 @@ ActiveRecord::Schema.define(version: 20140225061000) do
     t.boolean  "admin",                  default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

@@ -69,6 +69,6 @@ class GameMovesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_move_params
-      params.require(:game_move).permit(:game_type_id, :description, :code)
+      params.require(:game_move).permit(:description, :code, :game_type_id)
     end
 end

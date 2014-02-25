@@ -2,18 +2,18 @@
 
 %table
   %tr
-    %th Game type
     %th Description
     %th Code
+    %th Game type
     %th
     %th
     %th
 
   - @game_moves.each do |game_move|
     %tr
-      %td= game_move.game_type_id
       %td= game_move.description
       %td= game_move.code
+      %td= game_move.game_type.title
       %td= link_to 'Show', game_move
       %td= link_to 'Edit', edit_game_move_path(game_move)
       %td= link_to 'Destroy', game_move, :method => :delete, :data => { :confirm => 'Are you sure?' }

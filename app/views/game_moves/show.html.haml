@@ -1,14 +1,12 @@
-%p#notice= notice
-
-%p
-  %b Game type:
-  = @game_move.game_type_id
 %p
   %b Description:
   = @game_move.description
 %p
   %b Code:
   = @game_move.code
+%p
+  %b Game type:
+  = @game_move.game_type
 
 = link_to 'Edit', edit_game_move_path(@game_move)
 \|
