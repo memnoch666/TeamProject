@@ -1,4 +1,6 @@
 TeamProject::Application.routes.draw do
+  resources :games
+
   get "challenge/level"
   get "challenge/question"
   get "challenge/answer"
