@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225082637) do
+ActiveRecord::Schema.define(version: 20140225123817) do
+
+  create_table "game_details", force: true do |t|
+    t.integer  "game_id"
+    t.integer  "question_id"
+    t.integer  "status_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "game_details", ["game_id"], name: "index_game_details_on_game_id", using: :btree
+  add_index "game_details", ["question_id"], name: "index_game_details_on_question_id", using: :btree
+  add_index "game_details", ["status_id"], name: "index_game_details_on_status_id", using: :btree
 
   create_table "game_moves", force: true do |t|
     t.text     "description"
@@ -30,11 +42,43 @@ ActiveRecord::Schema.define(version: 20140225082637) do
     t.datetime "updated_at"
   end
 
+  create_table "games", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "game_type_id"
+    t.boolean  "completed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "games", ["game_type_id"], name: "index_games_on_game_type_id", using: :btree
+  add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
+
+  create_table "levels", force: true do |t|
+    t.text     "level"
+    t.integer  "game_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "levels", ["game_type_id"], name: "index_levels_on_game_type_id", using: :btree
+
   create_table "questions", force: true do |t|
-    t.string   "title"
+    t.text     "title"
     t.text     "scenario"
-    t.string   "answer"
-    t.integer  "level"
+    t.text     "answer"
+    t.integer  "game_type_id"
+    t.integer  "game_move_id"
+    t.integer  "level_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["game_move_id"], name: "index_questions_on_game_move_id", using: :btree
+  add_index "questions", ["game_type_id"], name: "index_questions_on_game_type_id", using: :btree
+  add_index "questions", ["level_id"], name: "index_questions_on_level_id", using: :btree
+
+  create_table "statuses", force: true do |t|
+    t.text     "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

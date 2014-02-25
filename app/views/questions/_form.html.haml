@@ -8,15 +8,30 @@
 
   .field
     = f.label :title
-    = f.text_field :title
+    = f.text_area :title
   .field
     = f.label :scenario
     = f.text_area :scenario
   .field
     = f.label :answer
-    = f.text_field :answer
+    = f.text_area :answer
+  .field
+    = f.label :game_type
+    = f.collection_select(:game_type_id,
+      GameType.all,
+      :id,
+      :title)
+  .field
+    = f.label :game_move
+    = f.collection_select(:game_move_id,
+      GameMove.where(params[:game_type]),
+      :id,
+      :description)
   .field
     = f.label :level
-    = f.number_field :level
+    = f.collection_select(:level_id,
+      Level.all,
+      :id,
+      :level)
   .actions
     = f.submit 'Save'

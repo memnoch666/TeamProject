@@ -1,20 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: TestFixture
-  scenario: TestFixture
-  answer: TestFixture
-  level: 1
+  title: MyText
+  scenario: MyText
+  answer: MyText
+  game_type_id: 
+  game_move_id: 
+  level_id: 
 
 two:
-  title: TestFixture
-  scenario: TestFixture
-  answer: TestFixutre
-  level: 1
-
-xss:
-  title: Cross Site Scripting
-  scenario:
-    Use cross site scripting to steal another users session.
-  answer: password
-  level: 3
+  title: MyText
+  scenario: MyText
+  answer: MyText
+  game_type_id: 
+  game_move_id: 
+  level_id: 

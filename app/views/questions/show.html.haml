@@ -10,8 +10,14 @@
   %b Answer:
   = @question.answer
 %p
+  %b Game type:
+  = @question.game_type.title
+%p
+  %b Game move:
+  = @question.game_move.description
+%p
   %b Level:
-  = @question.level
+  = @question.level.level
 
 = link_to 'Edit', edit_question_path(@question)
 \|

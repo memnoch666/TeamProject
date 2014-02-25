@@ -1,4 +1,14 @@
 TeamProject::Application.routes.draw do
+  resources :game_details
+
+  resources :statuses
+
+  resources :games
+
+  resources :questions
+
+  resources :levels
+
   resources :game_moves
 
   resources :game_types
@@ -14,8 +24,6 @@ TeamProject::Application.routes.draw do
   get "join/index"
   devise_for :users
   get "welcome/index"
-  resources :questions
-
   root 'welcome#index', as: 'welcome'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Game:
+  = @game_detail.game
+%p
+  %b Question:
+  = @game_detail.question
+%p
+  %b Status:
+  = @game_detail.status
+
+= link_to 'Edit', edit_game_detail_path(@game_detail)
+\|
+= link_to 'Back', game_details_path

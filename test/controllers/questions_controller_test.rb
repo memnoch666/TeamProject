@@ -3,12 +3,6 @@ require 'test_helper'
 class QuestionsControllerTest < ActionController::TestCase
   setup do
     @question = questions(:one)
-    @update = {
-      title: 'Update Test Title',
-      scenario: 'Update Test Scenario',
-      answer: 'password',
-      level: 1
-    }
   end
 
   test "should get index" do
@@ -24,7 +18,7 @@ class QuestionsControllerTest < ActionController::TestCase
 
   test "should create question" do
     assert_difference('Question.count') do
-      post :create, question: @update
+      post :create, question: { answer: @question.answer, game_move_id: @question.game_move_id, game_type_id: @question.game_type_id, level_id: @question.level_id, scenario: @question.scenario, title: @question.title }
     end
 
     assert_redirected_to question_path(assigns(:question))
@@ -41,7 +35,7 @@ class QuestionsControllerTest < ActionController::TestCase
   end
 
   test "should update question" do
-    patch :update, id: @question, question: @update
+    patch :update, id: @question, question: { answer: @question.answer, game_move_id: @question.game_move_id, game_type_id: @question.game_type_id, level_id: @question.level_id, scenario: @question.scenario, title: @question.title }
     assert_redirected_to question_path(assigns(:question))
   end
 

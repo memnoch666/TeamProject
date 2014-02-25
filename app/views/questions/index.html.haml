@@ -2,22 +2,27 @@
 
 %table
   %tr
+    %th Title
     %th Scenario
+    %th Answer
+    %th Game type
+    %th Game move
+    %th Level
     %th
     %th
     %th
 
   - @questions.each do |question|
-    %tr{:class => cycle('list_line_odd','list_line_even')}
-      %td{:class => 'list_description'}
-        %dl
-          %dt= question.title
-          %dd= truncate(strip_tags(question.scenario), length: 80)
-          %dd Answer: #{question.answer}
-          %dd Level: #{question.level}
-      %td{:class => 'list_action'}= link_to 'Show', question
-      %td{:class => 'list_action'}= link_to 'Edit', edit_question_path(question)
-      %td{:class => 'list_action'}= link_to 'Destroy', question, :method => :delete, :data => { :confirm => 'Are you sure?' }
+    %tr
+      %td= question.title
+      %td= question.scenario
+      %td= question.answer
+      %td= question.game_type.title
+      %td= question.game_move.description
+      %td= question.level.level
+      %td= link_to 'Show', question
+      %td= link_to 'Edit', edit_question_path(question)
+      %td= link_to 'Destroy', question, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
