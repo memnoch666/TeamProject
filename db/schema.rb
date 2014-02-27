@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225123817) do
+ActiveRecord::Schema.define(version: 20140225133531) do
 
   create_table "game_details", force: true do |t|
     t.integer  "game_id"
@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20140225123817) do
   add_index "game_details", ["status_id"], name: "index_game_details_on_status_id", using: :btree
 
   create_table "game_moves", force: true do |t|
-    t.text     "description"
-    t.text     "code"
+    t.text     "description",  null: false
+    t.text     "code",         null: false
     t.integer  "game_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(version: 20140225123817) do
   add_index "game_moves", ["game_type_id"], name: "index_game_moves_on_game_type_id", using: :btree
 
   create_table "game_types", force: true do |t|
-    t.string   "title"
-    t.integer  "max_score"
+    t.string   "title",      null: false
+    t.integer  "max_score",  null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140225123817) do
   add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
 
   create_table "levels", force: true do |t|
-    t.text     "level"
+    t.text     "level",        null: false
     t.integer  "game_type_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -63,9 +63,9 @@ ActiveRecord::Schema.define(version: 20140225123817) do
   add_index "levels", ["game_type_id"], name: "index_levels_on_game_type_id", using: :btree
 
   create_table "questions", force: true do |t|
-    t.text     "title"
-    t.text     "scenario"
-    t.text     "answer"
+    t.text     "title",        null: false
+    t.text     "scenario",     null: false
+    t.text     "answer",       null: false
     t.integer  "game_type_id"
     t.integer  "game_move_id"
     t.integer  "level_id"
@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(version: 20140225123817) do
   add_index "questions", ["level_id"], name: "index_questions_on_level_id", using: :btree
 
   create_table "statuses", force: true do |t|
-    t.text     "status"
+    t.text     "status",     null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -101,5 +101,20 @@ ActiveRecord::Schema.define(version: 20140225123817) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  add_foreign_key "game_details", "games", name: "game_details_game_id_fk"
+  add_foreign_key "game_details", "questions", name: "game_details_question_id_fk"
+  add_foreign_key "game_details", "statuses", name: "game_details_status_id_fk"
+
+  add_foreign_key "game_moves", "game_types", name: "game_moves_game_type_id_fk"
+
+  add_foreign_key "games", "game_types", name: "games_game_type_id_fk"
+  add_foreign_key "games", "users", name: "games_user_id_fk"
+
+  add_foreign_key "levels", "game_types", name: "levels_game_type_id_fk"
+
+  add_foreign_key "questions", "game_moves", name: "questions_game_move_id_fk"
+  add_foreign_key "questions", "game_types", name: "questions_game_type_id_fk"
+  add_foreign_key "questions", "levels", name: "questions_level_id_fk"
 
 end

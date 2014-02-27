@@ -13,7 +13,7 @@
     %tr
       %td= game_move.description
       %td= game_move.code
-      %td= game_move.game_type.title
+      %td= game_move.game_type_id
       %td= link_to 'Show', game_move
       %td= link_to 'Edit', edit_game_move_path(game_move)
       %td= link_to 'Destroy', game_move, :method => :delete, :data => { :confirm => 'Are you sure?' }
