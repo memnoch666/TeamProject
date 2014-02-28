@@ -1,3 +1,7 @@
 %h1= @question.title
-%h3= @question.answer
-%h3= @guess
+%h3 The Correct Answer Was - #{@question.answer}
+%h3 You Guessed - #{@guess}
+- if @question.answer.casecmp(@guess)==0
+    %h1 CORRECT
+- else
+    %h1 Boom, Crash & Burn
