@@ -18,13 +18,13 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: black;
+	background-color: #143467;
 }
 
 #wrapper {
 	min-height: 100%;
 	position: relative;
-	background-color: black;
+	background-color: white;
 }
 
 #yield {
@@ -53,14 +53,13 @@ html, body {
 #header {
 	padding: 0;
 	margin: 0;
-	background-color: black;
+	background-color: #143467;
 	height: 120px;
 	width: 100%;
 	white-space: nowrap;
 
 	.logo {
 		float: left;
-		height: 80px;
 		padding: 15px;
 		padding-right: 40px;
 	}
@@ -69,7 +68,7 @@ html, body {
 		color: white;
 		font-size: 60px;
 		margin: 0;
-		padding-top: 0px;
+		padding-top: 15px;
 		font-weight: bold;
 	}
 }
@@ -86,11 +85,13 @@ html, body {
 	height: 80px;
 	margin: 0;
 	padding: 0;
+	padding-top: 10px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	white-space: nowrap;
-	background: black;
+	background-image: image-url("footer.gif");
+	background-repeat: no-repeat;
 	color: white;
 
 	#credits {

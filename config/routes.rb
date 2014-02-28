@@ -1,4 +1,5 @@
 TeamProject::Application.routes.draw do
+  
   resources :game_details
 
   resources :statuses
@@ -13,18 +14,22 @@ TeamProject::Application.routes.draw do
 
   resources :game_types
 
+  resources :challenges
+
   get "challenge/level"
   get "challenge/question"
+  get "challenge/question/:level", to: 'challange/question#show', as: 'question_level'
   get "challenge/answer"
+  get "challenge/answer/:guess", to: 'challange/answer#guess', as: 'guess'
   get "challenge/solution"
   get "introduction/scenario"
   get "introduction/starting"
   get "introduction/information"
   get "introduction/resources"
   get "join/index"
+  get "admin/index"
   devise_for :users
-  get "welcome/index"
-  root 'welcome#index', as: 'welcome'
+  root 'join#index', as: 'join'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

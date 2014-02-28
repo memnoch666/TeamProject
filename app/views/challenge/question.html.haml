@@ -1,2 +1,8 @@
-%h1 Game#question
-%p Find me in app/views/game/question.html.haml
+%h1= @question.title
+%p= @question.scenario
+
+=form_tag({controller: "challenge", action: "answer"}, method: "get") do
+  =hidden_field_tag(:question_id, @question.id)
+  =label_tag(:guess, "Your Answer")
+  =text_field_tag(:guess)
+  =submit_tag("Submit")

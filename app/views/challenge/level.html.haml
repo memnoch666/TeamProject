@@ -1,9 +1,17 @@
-%h1 Choose you challenge!
-#card_container
-  = image_tag('card.jpg', :class => 'card')
-  = image_tag('card.jpg', :class => 'card')
-  = image_tag('card.jpg', :class => 'card')
+
+#level_container
+  %h3{:class => 'level'} Easy
+  %h3{:class => 'level'} Medium
+  %h3{:class => 'level'} Hard
   %span{:class => 'stretch'}
+#card_container
+
+  = link_to image_tag('card.jpg', :class => 'card'), challenge_question_path(:level => 1)
+  = link_to image_tag('card.jpg', :class => 'card'), challenge_question_path(:level => 2)
+  = link_to image_tag('card.jpg', :class => 'card'), challenge_question_path(:level => 3)
+  %span{:class => 'stretch'}
+
+%h1.title Click on a card to choose your challenge!
 
 
 

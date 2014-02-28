@@ -17,6 +17,8 @@
 		display: inline-block;
 		*display: inline;
 		zoom: 1;
+		border: 2px solid black;
+		border-radius: 10px;
 	}
 
 	.stretch {
@@ -25,4 +27,32 @@
 		font-size: 0;
 		line-height: 0;
 	}
+}
+
+#level_container {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	display: block;
+	margin: auto;
+	text-align: justify;
+	-ms-text-justiy: distribute-all-lines;
+	text-justify: distribute-all-lines;
+
+	.level {
+		text-align: center;
+		display: inline-block;
+		*display: inline;
+	}
+
+	.stretch {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+	}
+}
+
+h1.title {
+	text-align: center;
 }
