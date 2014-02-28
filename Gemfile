@@ -37,7 +37,6 @@ gem 'bootstrap-sass', '~> 3.1.0'
 gem 'tabulous'
 
 #Database gems
-gem 'mysql2'
 gem 'foreigner'
 
 group :doc do

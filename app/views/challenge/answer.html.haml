@@ -2,6 +2,11 @@
 %h3 The Correct Answer Was - #{@question.answer}
 %h3 You Guessed - #{@guess}
 - if @question.answer.casecmp(@guess)==0
-    %h1 CORRECT
+    %h1 Correct
+    %p Congratulations you successfully completed the challenge. 
+    = button_to 'Next Question', challenge_level_path, :method => "get"
 - else
-    %h1 Boom, Crash & Burn
+    %h1 Incorrect
+    %p Unfortunately you were incorrect that time.
+    %p If you need assistance try reading up on the learning resources page for clues on how to progress.
+    = button_to 'Skip Question', challenge_level_path, :method => "get"

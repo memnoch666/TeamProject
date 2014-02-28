@@ -29,7 +29,7 @@ TeamProject::Application.routes.draw do
   get "join/index"
   get "admin/index"
   devise_for :users
-  root 'join#index', as: 'join'
+  root 'introduction#scenario', as: 'scenario'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
