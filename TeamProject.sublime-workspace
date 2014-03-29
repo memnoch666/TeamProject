@@ -117,14 +117,6 @@
 				"buffer_size": 102,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "db/migrate/20140225053454_create_game_moves.rb",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
@@ -151,8 +143,8 @@
 	},
 	"file_history":
 	[
-		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225055349_create_game_types.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053454_create_game_moves.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225055349_create_game_types.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053647_create_game_types.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/layouts/application.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225052035_create_game_types.rb",
@@ -350,34 +342,8 @@
 						"selection":
 						[
 							[
-								91,
-								91
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "db/migrate/20140225053454_create_game_moves.rb",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								79,
+								79
 							]
 						],
 						"settings":

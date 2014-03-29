@@ -40,7 +40,7 @@ gem 'tabulous'
 gem 'foreigner'
 
 #lego
-gem 'lego_nxt'
+#gem 'lego_nxt'
 gem 'ap'
 gem 'music'
 gem 'crack'

@@ -1,4 +1,9 @@
 class ChallengeController < ApplicationController
+  before_filter :last_page
+
+  def last_page
+    session[:last_page] = request.env['HTTP_REFERRER']
+  end
 
   def level
   	@easy = Question.find_by level_id: 1
@@ -7,24 +12,22 @@ class ChallengeController < ApplicationController
   end
 
   def question
-    @max = Question.count
     @level = params[:level]
     @array = Question.where("level_id = ?", @level)
-
     @question = @array.sample
-
   end
 
   def answer
     @guess = params[:guess]
+    @id = params[:question_id]
     @question = Question.find(params[:question_id])
-    @song = Song.new
+    @robot = Robot.new
   end
 
   def solution
   end
 
-  class Song
+  class Robot
     def play
       require 'lego_nxt'
       require 'ap'
@@ -64,5 +67,77 @@ class ChallengeController < ApplicationController
     rescue
 
     end
+
+  def easy
+
+    require 'lego_nxt/low_level'
+
+    brick = LegoNXT::LowLevel::connect
+
+    brick.run_motor :all
+    sleep 1
+    brick.run_motor :A
+    sleep 2
+    brick.run_motor :all
+    sleep 1
+    brick.run_motor :B
+    sleep 2
+    brick.run_motor :all
+    sleep 2
+    brick.run_motor :B
+    sleep 2
+    brick.run_motor :all
+    sleep 1
+    brick.run_motor :A
+    sleep 2
+    brick.run_motor :all
+    sleep 1
+    brick.stop_motor :all
+  rescue
+
   end
+
+
+  def medium
+
+    require 'lego_nxt/low_level'
+
+    brick = LegoNXT::LowLevel::connect
+    brick.run_motor :all
+    sleep 2
+    brick.run_motor :A
+    sleep 2
+    brick.run_motor :all
+    sleep 1
+    brick.run_motor :B
+    sleep 2
+    brick.run_motor :all
+    sleep 4
+    brick.run_motor :B
+    sleep 2
+    brick.run_motor :all
+    sleep 2
+    brick.run_motor :A
+    sleep 2
+    brick.run_motor :all
+    sleep 2
+    brick.stop_motor :all
+  rescue
+
+  end
+
+
+  def hard
+
+    require 'lego_nxt/low_level'
+
+    brick = LegoNXT::LowLevel::connect
+
+    brick.run_motor :all
+    sleep 8
+    brick.stop_motor :all
+  rescue
+
+  end
+end
 end

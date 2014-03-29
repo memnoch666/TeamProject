@@ -3,6 +3,31 @@
     .container-fluid
       = tabs
 
-= if user_signed_in?
-  %p= current_user.email
+
+#Main
+  %h1 Getting Started with the Virtual Machine info:
+  %p 
+    The challenge is based around a virtual machine that you have been sent. This virtual machine is a Ubuntu box with more than a few surprises hidden away inside.
+  %p 
+    You will need to have VMPlayer or VMWare Workstation installed to start the virtual machine.
+
+  %p 
+    Some of the challenges require elevated privileges so you have been given the super user (sudo) password which is 
+    %b "team"
+
+  %p 
+    It should perform well on most machines capable of running the host software and it is about 6.5 GB in size. The files required for completing the questions can be found in the "home/questions/" folder, and each of them have been grouped according to their difficulty.
+
+  %p 
+    Should you damage or break your VM for any reason then just roll back to the original version and start again.
+
+  %p 
+    In addition to this, there is a second VM which is used for completing the hard challenges (exploitation, port scanning, etc.) It’s size is about 2GB and should be started along with the lubuntu VM. The default login settings are:
+  %br
+  %b username: msfadmin
+  %br 
+  %b password: msfadmin
+  %br
+  %br
+
   = button_to 'Start Game', challenge_level_path, :method => "get"

@@ -1,5 +1,5 @@
 %h1= @question.title
-%p= @question.scenario
+%p= sanitize @question.scenario
 
 =form_tag({controller: "challenge", action: "answer"}, method: "get") do
   =hidden_field_tag(:question_id, @question.id)

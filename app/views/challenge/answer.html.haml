@@ -1,13 +1,29 @@
-%h1= @question.title
-%h3 The Correct Answer Was - #{@question.answer}
-%h3 You Guessed - #{@guess}
-- if @question.answer.casecmp(@guess)==0
-    %h1 Correct
-    %p Congratulations you successfully completed the challenge. 
+#Main
+  %h1= @question.title
+  %h3 You Guessed - #{@guess}
+  - if @question.answer.casecmp(@guess)==0
+    %h1 Well Done
+    %p Congratulations you successfully completed the challenge!
     = button_to 'Next Question', challenge_level_path, :method => "get"
-    - @song.play
-- else
+    - if @question.level_id == 1
+      %p Easy move
+    - elsif @question.level_id == 2
+      %p Medium Move
+    - else
+      %p Hard Move
+
+
+  - else
     %h1 Incorrect
     %p Unfortunately you were incorrect that time.
-    %p If you need assistance try reading up on the learning resources page for clues on how to progress.
+    %p If you need assistance try reading up on the learning resources page for clues on how to progress and then try again. Or if you wish to skip and choose another question go ahead but It won't help your learning.
+
+
+    =form_tag({controller: "challenge", action: "answer"}, method: "get") do
+      =hidden_field_tag(:question_id, @question.id)
+      =label_tag(:guess, "Try Again:")
+      =text_field_tag(:guess)
+      =submit_tag("Submit")
+    %br
+    %br
     = button_to 'Skip Question', challenge_level_path, :method => "get"
