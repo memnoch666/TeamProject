@@ -95,7 +95,7 @@
 			"file": "app/models/game_move.rb",
 			"settings":
 			{
-				"buffer_size": 63,
+				"buffer_size": 64,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "app/models/game_type.rb",
 			"settings":
 			{
-				"buffer_size": 61,
+				"buffer_size": 79,
 				"line_ending": "Unix"
 			}
 		},
@@ -122,8 +122,8 @@
 			"file": "db/migrate/20140225053454_create_game_moves.rb",
 			"settings":
 			{
-				"buffer_size": 214,
-				"line_ending": "Unix"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -291,15 +291,15 @@
 					"file": "app/models/game_move.rb",
 					"settings":
 					{
-						"buffer_size": 63,
+						"buffer_size": 64,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								0,
+								0
 							]
 						],
 						"settings":
@@ -317,15 +317,15 @@
 					"file": "app/models/game_type.rb",
 					"settings":
 					{
-						"buffer_size": 61,
+						"buffer_size": 79,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								0,
+								0
 							]
 						],
 						"settings":
@@ -369,15 +369,15 @@
 					"file": "db/migrate/20140225053454_create_game_moves.rb",
 					"settings":
 					{
-						"buffer_size": 214,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								0,
+								0
 							]
 						],
 						"settings":

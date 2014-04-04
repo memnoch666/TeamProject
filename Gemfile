@@ -39,6 +39,12 @@ gem 'tabulous'
 #Database gems
 gem 'foreigner'
 
+#lego
+gem 'lego_nxt'
+gem 'ap'
+gem 'music'
+gem 'crack'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

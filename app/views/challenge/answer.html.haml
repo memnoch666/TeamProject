@@ -5,6 +5,7 @@
     %h1 Correct
     %p Congratulations you successfully completed the challenge. 
     = button_to 'Next Question', challenge_level_path, :method => "get"
+    - @song.play
 - else
     %h1 Incorrect
     %p Unfortunately you were incorrect that time.

@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140225133531) do
+ActiveRecord::Schema.define(version: 20140404094737) do
+
+  create_table "challenges", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "game_details", force: true do |t|
     t.integer  "game_id"
@@ -21,9 +26,9 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.datetime "updated_at"
   end
 
-  add_index "game_details", ["game_id"], name: "index_game_details_on_game_id", using: :btree
-  add_index "game_details", ["question_id"], name: "index_game_details_on_question_id", using: :btree
-  add_index "game_details", ["status_id"], name: "index_game_details_on_status_id", using: :btree
+  add_index "game_details", ["game_id"], name: "index_game_details_on_game_id"
+  add_index "game_details", ["question_id"], name: "index_game_details_on_question_id"
+  add_index "game_details", ["status_id"], name: "index_game_details_on_status_id"
 
   create_table "game_moves", force: true do |t|
     t.text     "description",  null: false
@@ -33,7 +38,7 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.datetime "updated_at"
   end
 
-  add_index "game_moves", ["game_type_id"], name: "index_game_moves_on_game_type_id", using: :btree
+  add_index "game_moves", ["game_type_id"], name: "index_game_moves_on_game_type_id"
 
   create_table "game_types", force: true do |t|
     t.string   "title",      null: false
@@ -50,8 +55,8 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.datetime "updated_at"
   end
 
-  add_index "games", ["game_type_id"], name: "index_games_on_game_type_id", using: :btree
-  add_index "games", ["user_id"], name: "index_games_on_user_id", using: :btree
+  add_index "games", ["game_type_id"], name: "index_games_on_game_type_id"
+  add_index "games", ["user_id"], name: "index_games_on_user_id"
 
   create_table "levels", force: true do |t|
     t.text     "level",        null: false
@@ -60,7 +65,7 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.datetime "updated_at"
   end
 
-  add_index "levels", ["game_type_id"], name: "index_levels_on_game_type_id", using: :btree
+  add_index "levels", ["game_type_id"], name: "index_levels_on_game_type_id"
 
   create_table "questions", force: true do |t|
     t.text     "title",        null: false
@@ -73,9 +78,9 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.datetime "updated_at"
   end
 
-  add_index "questions", ["game_move_id"], name: "index_questions_on_game_move_id", using: :btree
-  add_index "questions", ["game_type_id"], name: "index_questions_on_game_type_id", using: :btree
-  add_index "questions", ["level_id"], name: "index_questions_on_level_id", using: :btree
+  add_index "questions", ["game_move_id"], name: "index_questions_on_game_move_id"
+  add_index "questions", ["game_type_id"], name: "index_questions_on_game_type_id"
+  add_index "questions", ["level_id"], name: "index_questions_on_level_id"
 
   create_table "statuses", force: true do |t|
     t.text     "status",     null: false
@@ -99,22 +104,7 @@ ActiveRecord::Schema.define(version: 20140225133531) do
     t.boolean  "admin",                  default: false
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-
-  add_foreign_key "game_details", "games", name: "game_details_game_id_fk"
-  add_foreign_key "game_details", "questions", name: "game_details_question_id_fk"
-  add_foreign_key "game_details", "statuses", name: "game_details_status_id_fk"
-
-  add_foreign_key "game_moves", "game_types", name: "game_moves_game_type_id_fk"
-
-  add_foreign_key "games", "game_types", name: "games_game_type_id_fk"
-  add_foreign_key "games", "users", name: "games_user_id_fk"
-
-  add_foreign_key "levels", "game_types", name: "levels_game_type_id_fk"
-
-  add_foreign_key "questions", "game_moves", name: "questions_game_move_id_fk"
-  add_foreign_key "questions", "game_types", name: "questions_game_type_id_fk"
-  add_foreign_key "questions", "levels", name: "questions_level_id_fk"
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
