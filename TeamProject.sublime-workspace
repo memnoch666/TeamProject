@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-left"
+			],
+			[
 				"padding",
 				"padding-left"
 			],
@@ -92,30 +96,50 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/game_move.rb",
+			"file": "app/views/introduction/scenario.html.haml",
 			"settings":
 			{
-				"buffer_size": 64,
+				"buffer_size": 973,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/game_type.rb",
+			"file": "app/views/introduction/starting.html.haml",
 			"settings":
 			{
-				"buffer_size": 79,
+				"buffer_size": 1317,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "class Droptables < ActiveRecord::Migration\n  def change\n  	drop_table :game_move :game_type\n  end\nend\n",
-			"file": "db/migrate/20140225060542_droptables.rb",
-			"file_size": 102,
-			"file_write_time": 1393308461000000,
+			"file": "app/assets/stylesheets/introduction.css.scss",
 			"settings":
 			{
-				"buffer_size": 102,
+				"buffer_size": 106,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/application.css.scss",
+			"settings":
+			{
+				"buffer_size": 1749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.haml",
+			"settings":
+			{
+				"buffer_size": 1120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -143,8 +167,18 @@
 	},
 	"file_history":
 	[
-		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053454_create_game_moves.rb",
+		"/C/Sites/TeamProject/app/views/join/index.html.haml",
+		"/C/Sites/TeamProject/app/models/game_move.rb",
+		"/C/Sites/TeamProject/app/models/game_type.rb",
+		"/C/Sites/TeamProject/db/migrate/20140225060542_droptables.rb",
+		"/C/Sites/TeamProject/db/migrate/20140225053454_create_game_moves.rb",
+		"/C/Sites/TeamProject/app/views/challenge/answer.html.haml",
+		"/C/Sites/TeamProject/app/controllers/challenge_controller.rb",
+		"/C/Sites/TeamProject/app/models/challenge.rb",
+		"/C/Sites/TeamProject/Gemfile",
+		"/C/Sites/TeamProject/app/assets/scripts/song.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225055349_create_game_types.rb",
+		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053454_create_game_moves.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225053647_create_game_types.rb",
 		"/home/cfi/Documents/WebApplications/TeamProject/app/views/layouts/application.html.haml",
 		"/home/cfi/Documents/WebApplications/TeamProject/db/migrate/20140225052035_create_game_types.rb",
@@ -275,28 +309,30 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/game_move.rb",
+					"file": "app/views/introduction/scenario.html.haml",
 					"settings":
 					{
-						"buffer_size": 64,
+						"buffer_size": 973,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								164,
+								164
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -306,10 +342,10 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/models/game_type.rb",
+					"file": "app/views/introduction/starting.html.haml",
 					"settings":
 					{
-						"buffer_size": 79,
+						"buffer_size": 1317,
 						"regions":
 						{
 						},
@@ -322,7 +358,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -332,23 +370,103 @@
 				},
 				{
 					"buffer": 2,
-					"file": "db/migrate/20140225060542_droptables.rb",
+					"file": "app/assets/stylesheets/introduction.css.scss",
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								79,
-								79
+								48,
+								48
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/stylesheets/application.css.scss",
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/layouts/application.html.haml",
+					"settings":
+					{
+						"buffer_size": 1120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

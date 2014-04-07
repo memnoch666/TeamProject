@@ -6,11 +6,11 @@
     %p Congratulations you successfully completed the challenge!
     = button_to 'Next Question', challenge_level_path, :method => "get"
     - if @question.level_id == 1
-      %p Easy move
+      - @robot.easy()
     - elsif @question.level_id == 2
-      %p Medium Move
+      - @robot.medium()
     - else
-      %p Hard Move
+      - @robot.hard()
 
 
   - else

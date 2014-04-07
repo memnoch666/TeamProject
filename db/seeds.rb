@@ -1,3 +1,4 @@
+# Encoding: UTF-8
 GameType.delete_all
 GameType.create!(
 	title: 'Computer Forensics & Security',

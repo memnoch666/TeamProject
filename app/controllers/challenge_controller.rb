@@ -69,26 +69,30 @@ class ChallengeController < ApplicationController
     end
 
   def easy
-
+    require 'ap'
     require 'lego_nxt/low_level'
 
     brick = LegoNXT::LowLevel::connect
 
     brick.run_motor :all
     sleep 1
-    brick.run_motor :A
+    brick.run_motor :a
+    brick.stop_motor :b
     sleep 2
     brick.run_motor :all
     sleep 1
-    brick.run_motor :B
+    brick.run_motor :b
+    brick.stop_motor :a
     sleep 2
     brick.run_motor :all
     sleep 2
-    brick.run_motor :B
+    brick.run_motor :b
+    brick.stop_motor :a
     sleep 2
     brick.run_motor :all
     sleep 1
-    brick.run_motor :A
+    brick.run_motor :a
+    brick.stop_motor :b
     sleep 2
     brick.run_motor :all
     sleep 1
@@ -105,19 +109,23 @@ class ChallengeController < ApplicationController
     brick = LegoNXT::LowLevel::connect
     brick.run_motor :all
     sleep 2
-    brick.run_motor :A
+    brick.run_motor :a
+    brick.stop_motor :b
     sleep 2
     brick.run_motor :all
     sleep 1
-    brick.run_motor :B
+    brick.run_motor :b
+    brick.stop_motor :a
     sleep 2
     brick.run_motor :all
     sleep 4
-    brick.run_motor :B
+    brick.run_motor :b
+    brick.stop_motor :a
     sleep 2
     brick.run_motor :all
     sleep 2
-    brick.run_motor :A
+    brick.run_motor :a
+    brick.stop_motor :b
     sleep 2
     brick.run_motor :all
     sleep 2
